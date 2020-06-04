@@ -7,8 +7,8 @@ class SessionsController < ApplicationController
     user = User.find_by(email: params[:session][:email])
 
     if user
-      login_url user
-      redirect_to user_path(user)
+      log_in user
+      redirect_to new_event_path(user)
     else
       flash.now[:notice] = 'Email does not exist'
       render 'new'

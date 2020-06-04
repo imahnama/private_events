@@ -1,18 +1,6 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
-
 <h2>List of Events</h2>
 <div>
-  <% @user.events.each do |event| %>
+  <% @event.each do |event| %>
 
   <p>
    <strong>Event:</strong><%= event.name %>
@@ -25,7 +13,9 @@
     <p>
     <strong>Event:</strong><%= event.date %>
     </p>
+
+    <p>
+    <strong>Event:</strong><%= event.description %>
+    </p>
   <% end %>
 </div>
-
-<%= link_to 'Back', new_user_path  %>

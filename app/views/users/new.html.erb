@@ -1,0 +1,7 @@
+<%= form_for (@user), :url => users_path do |f| %>
+
+  NAME: <%= f.text_field :name %><br/>
+  Email: <%= f.email_field :email %><br/>
+
+  SUBMIT: <%= f.submit "Create"%>
+<% end %>

@@ -10,6 +10,7 @@ In this project, we  built a site similar to a private Eventbrite which allows u
 - Run the migrations
 - Create Controllers for different models and their routes.
 - Create Associations between different models.
+- Add navigation links across the top to help you jump around.
 - Modify Users shows page to separate those events which have occurred in the past (“Previously attended events”) from those which are occurring in the future (“Upcoming events”).
 - Add tests for the models
 

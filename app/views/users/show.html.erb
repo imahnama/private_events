@@ -10,20 +10,47 @@
   <%= @user.email %>
 </p>
 
-<h2>List of Events</h2>
+<h2>List of Upcoming Events</h2>
 <div>
-  <% @user.events.each do |event| %>
+  <% @upcoming_events.each do |event| %>
 
   <p>
    <strong>Event:</strong><%= event.name %>
    </p>
 
     <p>
-    <strong>Event:</strong><%= event.location %>
+    <strong>Location:</strong><%= event.location %>
     </p>
 
     <p>
-    <strong>Event:</strong><%= event.date %>
+    <strong>Description:</strong><%= event.description %>
+    </p>
+
+    <p>
+    <strong>Date:</strong><%= event.date %>
+    </p>
+  <% end %>
+</div>
+
+
+<h2>List of Past Events</h2>
+<div>
+  <% @previous_events.each do |event| %>
+
+  <p>
+   <strong>Event:</strong><%= event.name %>
+   </p>
+
+    <p>
+    <strong>Location:</strong><%= event.location %>
+    </p>
+
+    <p>
+    <strong>Description:</strong><%= event.description %>
+    </p>
+
+    <p>
+    <strong>Date:</strong><%= event.date %>
     </p>
   <% end %>
 </div>

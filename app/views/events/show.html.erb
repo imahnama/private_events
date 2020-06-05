@@ -6,3 +6,5 @@
 <% @event.attendees.each do |attendee| %>
   <%= attendee.name %><br />
 <%end%>
+
+<%= link_to 'My Events', user_path(@event)  %>

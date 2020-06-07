@@ -1,14 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
+<h2>
+  'Welcome, User'
+</h2>
 
 <h2>List of Upcoming Events</h2>
 <div>
@@ -54,7 +48,3 @@
     </p>
   <% end %>
 </div>
-
-<%= link_to 'Create Event', new_event_path  %>
-
-<%= link_to 'Log Out', logout_path %>

@@ -6,6 +6,7 @@ class SessionsController < ApplicationController
 
     if user
       log_in user
+      flash[:notice] = 'Login successfully'
       redirect_to user_path(user)
     else
       flash.now[:notice] = 'Email does not exist'
@@ -15,6 +16,6 @@ class SessionsController < ApplicationController
 
   def destroy
     log_out
-    redirect_to login_path if logged_in?
+    redirect_to login_path
   end
 end
